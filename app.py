@@ -17,7 +17,6 @@ class Paste(db.Model):
     content = db.Column(db.Text, nullable=False)
     ip_address = db.Column(db.String(45), nullable=False)
 
-# Home page displaying a form to create a paste
 @app.route('/', methods=['GET', 'POST'])
 def home():
     try:
@@ -186,7 +185,6 @@ def home():
     except OperationalError as e:
         return f"Database error: {e}", 500
 
-# Page to view a specific paste
 @app.route('/paste/<int:paste_id>')
 def view_paste(paste_id):
     paste = Paste.query.get(paste_id)
@@ -331,9 +329,6 @@ def view_paste(paste_id):
     </html>
     ''', paste=paste)
 
-
-
-# Route to delete a specific paste
 @app.route('/delete/<int:paste_id>')
 def delete_paste(paste_id):
     paste = Paste.query.get(paste_id)
@@ -341,7 +336,7 @@ def delete_paste(paste_id):
         return "Paste not found!", 404
 
     if paste.ip_address != request.remote_addr:
-        abort(403)  # Forbidden
+        abort(403)
 
     db.session.delete(paste)
     db.session.commit()
