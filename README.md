@@ -50,7 +50,6 @@ A simple pastebin application built with Flask, SQLAlchemy, and Flask-Migrate. T
     python app.py
     ```
 
-   Replace `app.py` with the name of your Python script containing the Flask app.
 
 ## Usage
 
