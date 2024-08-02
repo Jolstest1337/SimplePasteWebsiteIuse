@@ -24,7 +24,7 @@ A simple pastebin application built with Flask, SQLAlchemy, and Flask-Migrate. T
 
     ```bash
     git clone https://github.com/Jols1337/SimplePasteWebsiteIuse.git
-    cd your-repo-name
+    cd SimplePasteWebsiteIuse
     ```
 
 2. **Install the required packages:**
