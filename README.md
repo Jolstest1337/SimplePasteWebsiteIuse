@@ -47,7 +47,7 @@ A simple pastebin application built with Flask, SQLAlchemy, and Flask-Migrate. T
 4. **Run the application:**
 
     ```bash
-    python apppy
+    python app.py
     ```
 
    Replace `app.py` with the name of your Python script containing the Flask app.
