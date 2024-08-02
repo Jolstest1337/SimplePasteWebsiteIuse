@@ -76,7 +76,7 @@ The Alembic migration script includes:
 - `downgrade()`: Removes the `ip_address` column from the `paste` table
 
 # Note
-I'm still learning HTML, so there is a bug with the dark mode on the textbox. This issue took more time to address than expected. If you notice any other issues or have suggestions, feel free to contribute!
+I'm still learning HTML, so there is a bug with the dark mode on the textbox i haven't fixed it yet but on the next update it will be fixed also it took longer than more than expected.
 
 ## License
 
